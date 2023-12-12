@@ -1,7 +1,10 @@
 getValsFromString = function(stringVal)
 {
+  # remove all leading and trailing white spaces
   vals = trimws(stringVal);
+  # split the string by any kind of white space and create a vector of those values
   valsSep = strsplit(vals, split="\\s+")[[1]];
+  # return the vector
   return(valsSep);
 }
 
